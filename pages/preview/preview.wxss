@@ -1,0 +1,138 @@
+/* pages/preview/preview.wxss */
+page {
+}
+
+.container {
+  color: #f2cd95;
+}
+
+.userInfo, .scroll-view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.scroll-view {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  bottom: 100rpx;
+}
+
+.userinfo-avatar {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  margin-top: 16rpx;
+}
+
+.userinfo-nickName {
+  /* margin-top: 24rpx; */
+  font-size: 36rpx;
+  line-height: 50rpx;
+  margin-top: 6rpx;
+}
+
+.userInfo .text {
+  line-height: 46rpx;
+  height: 46rpx;
+  font-size: 30rpx;
+}
+
+.picture {
+  width: 616rpx;
+  border: 6rpx solid #f2cd95;
+  height: 394rpx;
+  box-sizing: border-box;
+  margin-top: 44rpx;
+}
+
+.open {
+  margin-top: 34rpx;
+  line-height: 78rpx;
+  font-size: 24rpx;
+  height: 108rpx;
+  background-repeat: no-repeat;
+  background-size: 50rpx 30rpx;
+  background-position: center bottom;
+  background-image: url('http://mini.0315678.cn/red-packet/img/arrow-up.png');
+  text-align: center;
+}
+
+.close {
+  margin: 55rpx auto 0 auto;
+  height: 70rpx;
+  width: 70rpx;
+  background-repeat: no-repeat;
+  background-size: 50rpx 30rpx;
+  background-position: center center;
+  background-image: url('http://mini.0315678.cn/red-packet/img/arrow-down.png');
+}
+
+.bottom {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 220rpx;
+  display: flex;
+  justify-content: center;
+  background-image: url('http://mini.0315678.cn/red-packet/img/bg.png');
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-size: 750rpx;
+  align-items: flex-end;
+}
+
+.button-send {
+  height: 180rpx;
+  width: 180rpx;
+  border-radius: 50%;
+  box-sizing: border-box;
+  color: #d84e43;
+  background: #f2cd95;
+  text-align: center;
+  line-height: 50rpx;
+  padding: 40rpx 20rpx;
+  font-size: 36rpx;
+  margin-bottom: 38rpx;
+}
+
+
+.content {
+  margin-top: 42rpx;
+  overflow: hidden;
+  height: 84rpx;
+  transition: all 0.5s;
+}
+
+.text-p {
+  width: 616rpx;
+  box-sizing: border-box;
+  font-size: 30rpx;
+  color: #f2cd95;
+  line-height: 42rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tape {
+  width: 616rpx;
+  height: 88rpx;
+  margin-top: 46rpx;
+  background: #1cac19;
+  border-radius: 8rpx;
+}
+
+.tape {
+  position: relative;
+}
+
+.innerTape {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+}

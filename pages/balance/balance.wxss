@@ -1,0 +1,47 @@
+/* pages/balance /balance.wxss */
+page{
+  background: #faf6f3;
+}
+.wrap{
+  margin-top: 82rpx;
+  background: #fff;
+  width: 702rpx;
+  border-radius: 8rpx;
+  box-sizing: border-box;
+  padding: 33rpx 42rpx;
+}
+.title{
+  line-height: 80rpx;
+  font-size: 30rpx;
+}
+.input{
+  font-size: 64rpx;
+  height: 100rpx;
+  display: flex;
+  border-bottom: 1rpx solid #4a4a4a;
+  align-items: center;
+}
+.text{
+  line-height: 130rpx;
+  font-size: 30rpx;
+  color: #9b9b9b;
+}
+.shuru{
+  height: 100%;
+  font-size: 50rpx;
+}
+.submit{
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  color: #fff;
+  font-size: 36rpx;
+  border-radius: 8rpx;
+  background: #1bac19;
+}
+.time{
+  font-size: 24rpx;
+  color: #9b9b9b;
+  line-height: 84rpx;
+  text-align: center;
+}

@@ -1,0 +1,63 @@
+<!--pages/editor/editor.wxml-->
+<view class="container" wx:if="{{!showCanvas}}">
+  <view class="editor">
+    <view class="text">
+      <textarea type='text' class="write" maxlength="{{maxLength}}" placeholder="介绍一下你自己，让大家迅速了解你" bindinput="onInputWrite" value='{{text}}' placeholder-style="color:#9b9b9b;font-size:36rpx;"></textarea>
+      <view class="tips">{{wordCount}}/{{maxLength}}</view>
+    </view>
+    <view class="picVol" catchtap='onTapPhoto'>
+      <view class="picVol-item">
+        <image src="{{picture?picture:imagePic}}"></image>
+        添加图片
+      </view>
+      <view class="vol picVol-item" catchtouchstart='onStartVoice' catchtouchend='onEndVoice'>
+        <image src="{{imageVol}}"></image>
+        添加语音
+      </view>
+    </view>
+  </view>
+  <view class="border-radius options">
+    <view>悬赏金额（元）</view>
+    <view class="options-right">
+      <input type="number" 
+      bindinput="onInputMoney" placeholder="请输入红包总金额" value="{{money}}" placeholder-style="color:#9b9b9b;font-size:30rpx;"></input>
+
+    </view>
+  </view>
+  <view class="border-radius options">
+    <view>红包个数（个）</view>
+    <view class="options-right">
+      <input type="number" bindinput="onInputCount" 
+      value="{{count}}" placeholder="请输入红包个数" 
+      placeholder-style="color:#9b9b9b;font-size:30rpx;"></input>
+    </view>
+  </view>
+  <view class="border-radius options">
+    <view>设置几秒后开抢</view>
+    <view class="options-right seconds">
+      <view class="decrease button" catchtap='onTapDecreaseSecond'>-</view>
+      <input maxlength="2" bindinput="onInputSeconds" type='number' value='{{seconds}}' style='width: 40rpx;margin: 0'></input>''
+      <view class="add button" catchtap='onTapAddSecond'>+</view>
+    </view>
+  </view>
+  <view class="submit" catchtap='onTapCash' style="background:{{submitColor}}">{{submitText}}</view>
+  <view class="need" catchtap='onTapChoosePay'>
+    <view class="{{classIcon}} icon"></view>
+    <view class="text">优先使用余额支付:4.39元
+      <text class="extraMoney">您将向说大事支付1万元服务费</text>
+    </view>
+  </view>
+  <view class="tabbar">
+    <navigator url="/pages/record/record">
+      <view class="tabbar-item tabbar-left">我的记录</view>
+    </navigator>
+    <navigator url="/pages/balance/balance">
+      <view class="tabbar-item tabbar-right">我要提现</view>
+    </navigator>
+  </view>
+  <view class="yuyintupian" wx:if="{{showMic}}" style="background-image: url({{micImg}});">
+  </view>
+</view>
+<block wx:for="{{arr}}" wx:key="{{index}}">
+  <image class="prestrain" src="{{item}}" bindload='aa'></image>
+</block>

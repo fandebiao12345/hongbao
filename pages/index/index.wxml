@@ -1,0 +1,27 @@
+<!--index.wxml-->
+<view class="container">
+    <view class="userInfo">
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <view class="text">{{userInfo.nickName}}发了一个20元的红包</view>
+      <view class="userinfo-nickName">已抢15元还剩5元</view>
+    </view>
+
+    <image src="http://mini.0315678.cn/red-packet/img/tupian.jpg" class="picture"></image>
+    <view class="content" style="height:{{contentHeight}}" id="content">
+      <view class="text-p" style="white-space: {{isnoWrap}}">
+        回家家爱就爱阿大声道的撒打算打算打所大所大大大大
+      </view>
+      <view class="tape">
+        <view class="innerTape" catchtap='a'></view>
+      </view>
+      <view class="close" catchtap='onTapClose'></view>
+      <view style='height:262rpx;'>
+      </view>
+    </view>
+    <view class="open" catchtap="onTapOpen" wx:if="{{!open}}">展开了解更多</view>
+
+    <view class="bottom">
+      <view class="{{buttonClass}}" catchtap='onTapStart' animation="{{animationData}}">{{seconds}}</view>
+    </view>
+
+</view>

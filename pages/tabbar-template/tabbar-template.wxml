@@ -1,0 +1,13 @@
+<template name="tabbar-template">
+  <view class="tabbar">
+    <navigator url="/pages/record/record">
+      <view class="tabbar-item tabbar-left">我的记录</view>
+    </navigator>
+    <navigator url="/pages/balance/balance">
+      <view class="tabbar-item tabbar-right">我要提现</view>
+    </navigator>
+    <navigator url="/pages/editor/editor">
+      <view class="tabbar-send">发</view>
+    </navigator>
+  </view>
+</template>

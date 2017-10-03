@@ -1,0 +1,23 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+} 
+page{
+  background: #d95940
+}
+image{
+  display: block;
+}
+.active{
+  color: #c3463c;
+}
+.active-blue{
+  color: #4a90e2;
+}
+.border-radius{
+  border-radius: 8rpx
+}

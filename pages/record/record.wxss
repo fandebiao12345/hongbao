@@ -1,0 +1,169 @@
+/* pages/record/record.wxss */
+page{
+  background: #faf6f3;
+}
+.tabbar-top{
+  position: fixed;
+  height: 96rpx;
+  line-height: 96rpx;
+  display: flex;
+  font-size: 30rpx;
+  color: #a5a5a5;
+  width: 100%;
+  background: #fff;
+  z-index:100;
+}
+.tabbar-top .tabbar-item{
+  text-align: center;
+  flex: 1;
+}
+scroll-view{
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left:0;
+  bottom: 98rpx;
+}
+swiper{
+  width: 100%;
+  height: 1206rpx;
+}
+.send,.get{
+  width: 100%;
+  height: 100%;
+}
+.send{
+  
+}
+.get{
+  
+}
+.activeLine{
+  width: 96rpx;
+  height: 6rpx;
+  background: #d95940;
+  position: absolute;
+  bottom: 0;
+  transition: left 0.5s;
+}
+.tabbar-bottom{
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 98rpx;
+  background: #fff;
+  font-size: 24rpx;
+  color: #9b9b9b;
+  line-height: 156rpx;
+  transition: all 0.3s;
+  justify-content: space-between;
+}
+.tabbar-bottom .tabbar-item{
+  width: 360rpx;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: 48rpx 48rpx;
+  background-position: center 12rpx;
+}
+.tabbar-bottom .tabbar-left{
+  background-image: url('https://mini.0315678.cn/red-packet/img/tabbar-left.png');
+}
+.tabbar-bottom .tabbar-right{
+  background-image: url('https://mini.0315678.cn/red-packet/img/tabbar-right.png');
+}
+.tabbar-bottom .tabbar-send{
+  height: 120rpx;
+  width: 120rpx;
+  position: absolute;
+  top: -60rpx;
+  left: 50%;
+  margin-left: -60rpx;
+  background: #f2cd95;
+  font-size: 60rpx;
+  color: #fff;
+  line-height: 120rpx;
+  text-align: center;
+  border-radius: 50%;
+}
+.userInfo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.userInfo .avatar{
+  width: 180rpx;
+  height: 180rpx;
+  margin-top: 132rpx;
+  width: 180rpx;
+  height: 180rpx;
+  border-radius: 50%;
+}
+.nickName{
+  font-size: 30rpx;
+  height: 112rpx;
+  line-height: 112rpx;
+}
+.name{
+  color: #536c82;
+}
+.detail{
+  width: 540rpx;
+  display: flex;
+}
+.detail .money,.count{
+  flex: 1;
+  text-align: center;
+}
+.detail .text{
+  line-height: 82rpx;
+  height: 82rpx;
+  color: #9b9b9b;
+  font-size: 30rpx;
+}
+.detail .number{
+  height: 52rpx;
+  line-height: 52rpx;
+  color: #343434;
+  font-size: 40rpx;
+}
+.sendList{
+  margin-top: 88rpx;
+  background: #fff;
+  padding: 0 32rpx;
+}
+.send-item{
+  border-bottom: 1rpx solid #dcdcdc;
+  display: flex;
+  justify-content: space-between;
+  font-size: 30rpx;
+  padding: 22rpx 0 26rpx 0;
+}
+.send-item:last-child{
+  border: none;
+}
+.sendList .top{
+  height: 44rpx;
+  line-height: 44rpx;
+  color: #646464;
+}
+.sendList .bottom{
+  height: 40rpx;
+  line-height: 40rpx;
+  color: #7d7d7d;
+}
+.sendList .money .top{
+  color: #333333;
+}
+.sendList .money .bottom{
+  text-align: right;
+}
+.sendList .avatar{
+  width: 78rpx;
+  height: 78rpx;
+  margin-right: 18rpx;
+}
+.getList .date{
+  display: flex;
+}

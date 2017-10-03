@@ -1,0 +1,68 @@
+<!--pages/result/result.wxml-->
+<view class="container">
+  <view class="main">
+    <image class="avatar" src="https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83eorQxEXhiaiaJbK2CniaEWQ7O60ha35CsEkmyPGbxMPaebaVaGsv5tKMrpDa5rA5QVOZxiaOjIDlkCECA/0"></image>
+    <view class="nickName">优帮帮主的红包</view>
+    <view class="money">￥8.88</view>
+    <view class="result">恭喜抢到了8元</view>
+    <view class="handle">
+      <navigator open-type='navigate' url='/pages/balance/balance'>
+        <view class="cash">去提现</view>
+      </navigator>
+      
+      <navigator open-type='redirectTo' url='/pages/editor/editor'>
+        <view class="send">我也发一个</view>
+      </navigator>
+
+      
+
+      <view class="transmit">去转发</view>
+    </view>
+    <image class="pic" src="http://mini.0315678.cn/red-packet/img/tupian.jpg"></image>
+    <view class="text-p">
+      回家家爱就爱阿大声道哈速度会撒的谎撒谎对撒很对啊手段是对按时对撒会对 回家家爱就爱阿大声道哈速度会撒的谎撒谎对撒很对啊手段是对按时对撒会对回家家爱就爱阿大声道哈速度发送到发送到放水电费水电费是斯蒂芬斯蒂
+    </view>
+    <view class="tape">
+
+    </view>
+  </view>
+  <view class="packNum">
+    共34.07元，已领取4/30个
+  </view>
+  <view class="people-list">
+    <view class="list-item">
+      <view class="avatarnickName">
+        <image class="avatar" src="https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83eorQxEXhiaiaJbK2CniaEWQ7O60ha35CsEkmyPGbxMPaebaVaGsv5tKMrpDa5rA5QVOZxiaOjIDlkCECA/0"></image>
+        <view class="detail">
+          <view class="name" style="background-image:url('https://mini.0315678.cn/red-packet/img/man.png')">美猴王</view>
+          <view class="money">抢到9.10元</view>
+        </view>
+      </view>
+      <view class="date">9月20日 11:14</view>
+    </view>
+    <view class="list-item">
+      <view class="avatarnickName">
+        <image class="avatar" src="https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83eorQxEXhiaiaJbK2CniaEWQ7O60ha35CsEkmyPGbxMPaebaVaGsv5tKMrpDa5rA5QVOZxiaOjIDlkCECA/0"></image>
+        <view class="detail">
+          <view class="name">美猴王</view>
+
+          <view class="money">抢到9.10元</view>
+        </view>
+      </view>
+      <view class="date">9月20日 11:14</view>
+    </view>
+    <view class="list-item">
+      <view class="avatarnickName">
+        <image class="avatar" src="https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83eorQxEXhiaiaJbK2CniaEWQ7O60ha35CsEkmyPGbxMPaebaVaGsv5tKMrpDa5rA5QVOZxiaOjIDlkCECA/0"></image>
+        <view class="detail">
+          <view class="name">美猴王</view>
+          <view class="money">抢到9.10元</view>
+        </view>
+      </view>
+      <view class="date">9月20日 11:14</view>
+    </view>
+  </view>
+  <navigator url='/pages/record/record'>
+    <view class="myRecord active-blue">查看我的记录</view>
+  </navigator>
+</view>

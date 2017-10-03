@@ -1,0 +1,19 @@
+{
+  "pages": [
+    "pages/editor/editor",
+    "pages/index/index",
+    "pages/result/result",
+    "pages/record/record",
+    "pages/balance/balance",
+    "pages/preview/preview",
+    "pages/cutInside/cutInside"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#d95940",
+    "navigationBarTitleText": "说大事专用",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": false,
+    "backgroundColor": "#d95940"
+  }
+}

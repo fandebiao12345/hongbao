@@ -1,0 +1,146 @@
+/* pages/result/result.wxss */
+page{
+  background: #f6f6f6;
+  padding-bottom: 50rpx;
+}
+.main .avatar{
+  width: 180rpx;
+  height: 180rpx;
+  margin-top: 82rpx;
+  border-radius: 50%;
+
+}
+.main{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 60rpx;
+  background: #d95940;
+}
+.nickName{
+  font-size: 30rpx;
+  line-height: 90rpx;
+  color: #ffc1b8;
+}
+.main .money{
+  font-size: 64rpx;
+  color: #f2cd95;
+  line-height: 104rpx;
+}
+.result{
+  height: 90rpx;
+  width: 520rpx;
+  margin-top: 40rpx;
+  border-radius: 45rpx;
+  background: #f3af9c;
+  text-align: center;
+  line-height: 90rpx;
+  font-size: 36rpx;
+  color: #f9e5da;
+}
+.packNum{
+  font-size: 30rpx;
+  color: #9b9b9b;
+  line-height: 100rpx;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 24rpx;
+}
+.people-list{
+  padding: 0 24rpx;
+  background: #fff;
+  width: 720rpx;
+  box-sizing: border-box;
+  line-height: 100rpx;
+  font-size: 24rpx;
+  color: #4a4a4a;
+  border: 1rpx solid #d0d0d0;
+  border-radius: 8rpx;
+}
+.list-item{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2rpx solid #e9e9e9;
+  padding: 26rpx 0;
+}
+.list-item:last-child{
+  border:none;
+}
+.avatarnickName {
+  display: flex;
+  align-items: center;
+}
+.avatarnickName .avatar{
+  width: 110rpx;
+  height: 110rpx;
+  border-radius: 50%;
+  margin-right: 24rpx;
+}
+.avatarnickName .detail .name{
+  float: left;
+  font-size: 24rpx;
+  line-height: 52rpx;
+  padding-right: 34rpx;
+  background-repeat: no-repeat;
+  background-size: 24rpx;
+  background-position: right center;
+}
+.avatarnickName .detail .money{
+  margin-top: 52rpx;
+  font-size: 30rpx;
+  line-height: 58rpx;
+}
+.list-item .date{
+  line-height: 48rpx;
+  color: #7d7d7d;
+}
+
+.handle{
+  width: 602rpx;
+  display: flex;
+  justify-content: space-between;
+  font-size: 32rpx;
+  color: #fff;
+}
+.handle view{
+  padding-left: 38rpx;
+  line-height: 160rpx;
+  background-repeat: no-repeat;
+  background-position: left 64rpx;
+  background-size: 30rpx 30rpx;
+}
+.handle .cash{
+  background-image: url('https://mini.0315678.cn/red-packet/img/cash.png');
+}
+.handle .send{
+  background-image: url('https://mini.0315678.cn/red-packet/img/send.png');
+}
+.handle .transmit{
+  background-image: url('https://mini.0315678.cn/red-packet/img/transmit.png');
+}
+.pic{
+  width: 602rpx;
+  height: 386rpx;
+  border: 2rpx solid #f2cd95;
+}
+.text-p {
+  margin-top: 36rpx;
+  width: 606rpx;
+  box-sizing: border-box;
+  font-size: 30rpx;
+  color: #f2cd95;
+  line-height: 42rpx;
+}
+.tape{
+  height: 88rpx;
+  width: 606rpx;
+  background: #f2cd95;
+  margin-top: 46rpx;
+  border-radius: 8rpx;
+}
+.myRecord{
+  line-height: 200rpx;
+  height: 200rpx;
+  font-size: 28rpx;
+}

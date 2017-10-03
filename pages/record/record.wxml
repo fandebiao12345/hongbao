@@ -1,0 +1,195 @@
+<!--pages/record/record.wxml-->
+<view class="container">
+  <view class="tabbar-top">
+    <view class="tabbar-item tabbar-left" style="color: {{colorSend}}" catchtap='onTapSend'>我发出的</view>
+    <view class="tabbar-item tabbar-right" style="color: {{colorGet}}" catchtap='onTapGet'>我收到的</view>
+    <view class="activeLine" style="left:{{left}}"></view>
+  </view>
+  <swiper bindchange="currentChange" current="{{current}}" style="height:{{clientHeight}}px">
+    <swiper-item>
+      <scroll-view scroll-y="true">
+        <view class="send">
+          <view class="userInfo">
+            <image class="avatar" src="https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83eqkbicpO16eOsYEh16PDibMftfVqicLOrb8ibxgI0wfNF6m7AibNZ4sEm9xEo8ADVA8Fg4E7IeZHWIrHrA/0"></image>
+            <view class="nickName">
+              <text class="name">美猴王</text> 发出的
+            </view>
+            <view class="detail">
+              <view class="money">
+                <view class="text">金额（元）</view>
+                <view class="number">22.00</view>
+              </view>
+              <view class="count">
+                <view class="text">数量（个）</view>
+                <view class="number">4</view>
+              </view>
+            </view>
+          </view>
+          <view class="sendList">
+            <view class="list-item send-item">
+              <view class="date">
+                <view class="top">2017年</view>
+                <view class="bottom">9月20日 10:49</view>
+              </view>
+              <view class="money">
+                <view class="top">1.00 元</view>
+                <view class="bottom">1/1</view>
+              </view>
+            </view>
+            <view class="list-item send-item">
+              <view class="date">
+                <view class="top">2017年</view>
+                <view class="bottom">9月20日 10:49</view>
+              </view>
+              <view class="money">
+                <view class="top">1.00 元</view>
+                <view class="bottom">1/1</view>
+              </view>
+            </view>
+            <view class="list-item send-item">
+              <view class="date">
+                <view class="top">2017年</view>
+                <view class="bottom">9月20日 10:49</view>
+              </view>
+              <view class="money">
+                <view class="top">1.00 元</view>
+                <view class="bottom">1/1</view>
+              </view>
+            </view>
+            <view class="list-item send-item">
+              <view class="date">
+                <view class="top">2017年</view>
+                <view class="bottom">9月20日 10:49</view>
+              </view>
+              <view class="money">
+                <view class="top">1.00 元</view>
+                <view class="bottom">1/1</view>
+              </view>
+            </view>
+            <view class="list-item send-item">
+              <view class="date">
+                <view class="top">2017年</view>
+                <view class="bottom">9月20日 10:49</view>
+              </view>
+              <view class="money">
+                <view class="top">1.00 元</view>
+                <view class="bottom">1/1</view>
+              </view>
+            </view>
+            <view class="list-item send-item">
+              <view class="date">
+                <view class="top">2017年</view>
+                <view class="bottom">9月20日 10:49</view>
+              </view>
+              <view class="money">
+                <view class="top">1.00 元</view>
+                <view class="bottom">1/1</view>
+              </view>
+            </view>
+            <view class="list-item send-item">
+              <view class="date">
+                <view class="top">2017年</view>
+                <view class="bottom">9月20日 10:49</view>
+              </view>
+              <view class="money">
+                <view class="top">1.00 元</view>
+                <view class="bottom">1/1</view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </swiper-item>
+    <swiper-item>
+      <scroll-view scroll-y="true">
+        <view class="get">
+          <view class="userInfo">
+            <image class="avatar" src="https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83eqkbicpO16eOsYEh16PDibMftfVqicLOrb8ibxgI0wfNF6m7AibNZ4sEm9xEo8ADVA8Fg4E7IeZHWIrHrA/0"></image>
+            <view class="nickName">
+              <text class="name">美猴王</text> 收到的
+            </view>
+            <view class="detail">
+              <view class="money">
+                <view class="text">金额（元）</view>
+                <view class="number">22.00</view>
+              </view>
+              <view class="count">
+                <view class="text">数量（个）</view>
+                <view class="number">4</view>
+              </view>
+            </view>
+          </view>
+          <view class="sendList getList">
+            <view class="list-item send-item">
+              <view class="date">
+                <image class="avatar" src="https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83eqkbicpO16eOsYEh16PDibMftfVqicLOrb8ibxgI0wfNF6m7AibNZ4sEm9xEo8ADVA8Fg4E7IeZHWIrHrA/0"></image>
+                <view>
+                  <view class="top">美猴王</view>
+                  <view class="bottom">9月20日 10:49</view>
+                </view>
+
+              </view>
+              <view class="money">
+                <view class="top">1.00 元</view>
+                <view class="bottom">1/1</view>
+              </view>
+            </view>
+            <view class="list-item send-item">
+              <view class="date">
+                <image class="avatar" src="https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83eqkbicpO16eOsYEh16PDibMftfVqicLOrb8ibxgI0wfNF6m7AibNZ4sEm9xEo8ADVA8Fg4E7IeZHWIrHrA/0"></image>
+                <view>
+                  <view class="top">美猴王</view>
+                  <view class="bottom">9月20日 10:49</view>
+                </view>
+
+              </view>
+              <view class="money">
+                <view class="top">1.00 元</view>
+                <view class="bottom">1/1</view>
+              </view>
+            </view>
+            <view class="list-item send-item">
+              <view class="date">
+                <image class="avatar" src="https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83eqkbicpO16eOsYEh16PDibMftfVqicLOrb8ibxgI0wfNF6m7AibNZ4sEm9xEo8ADVA8Fg4E7IeZHWIrHrA/0"></image>
+                <view>
+                  <view class="top">美猴王</view>
+                  <view class="bottom">9月20日 10:49</view>
+                </view>
+
+              </view>
+              <view class="money">
+                <view class="top">1.00 元</view>
+                <view class="bottom">1/1</view>
+              </view>
+            </view>
+            <view class="list-item send-item">
+              <view class="date">
+                <image class="avatar" src="https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83eqkbicpO16eOsYEh16PDibMftfVqicLOrb8ibxgI0wfNF6m7AibNZ4sEm9xEo8ADVA8Fg4E7IeZHWIrHrA/0"></image>
+                <view>
+                  <view class="top">美猴王</view>
+                  <view class="bottom">9月20日 10:49</view>
+                </view>
+
+              </view>
+              <view class="money">
+                <view class="top">1.00 元</view>
+                <view class="bottom">1/1</view>
+              </view>
+            </view>
+          </view>
+        </view>
+        </scroll-view>
+    </swiper-item>
+  </swiper>
+  <view class="tabbar-bottom">
+    <navigator url="/pages/record/record">
+      <view class="tabbar-item tabbar-left">我的记录</view>
+    </navigator>
+    <navigator url="/pages/balance/balance">
+      <view class="tabbar-item tabbar-right">我要提现</view>
+    </navigator>
+    <navigator url="/pages/editor/editor">
+      <view class="tabbar-send">发</view>
+    </navigator>
+  </view>
+</view>

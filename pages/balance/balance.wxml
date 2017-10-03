@@ -1,0 +1,15 @@
+<!--pages/balance /balance.wxml-->
+<view class="container">
+  <view class="wrap">
+    <view class="total title">账户余额：<text class="active">{{balance}}</text>元</view>
+ 
+    <view class="input">￥<input placeholder="请输入提现金额" 
+    type='number' 
+    bindinput="onInputNum"
+    value="{{value}}"
+    class="shuru" placeholder-style="font-size: 40rpx"></input></view>
+    <view class="text">提现到微信红包，<text class="active-blue" catchtap='onTapTotal'>全部提现</text></view>
+    <view class="submit" catchtap='onTapGet'>提现</view>
+    <view class="time">1-5个工作日到账</view>
+  </view>
+</view>

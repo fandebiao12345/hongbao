@@ -1,0 +1,27 @@
+<!--pages/preview/preview.wxml-->
+
+<view class="container">
+  <view class="userInfo">
+    <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <view class="userinfo-nickName">{{userInfo.nickName}}</view>
+     <view class="text">发一个红包 共50元</view> 
+  </view>
+  
+    <image src="http://mini.0315678.cn/red-packet/img/tupian.jpg" class="picture"></image>
+    <view class="content" style="height:{{contentHeight}}" id="content">
+      <view class="text-p" style="white-space: {{isnoWrap}}">
+        回家家爱就爱阿大声道的撒打算打算打所大所大大大大
+      </view> 
+      <view class="tape">
+        <view class="innerTape" catchtap='a'></view>
+      </view>
+      <view class="close" catchtap='onTapClose'></view>
+      <view style='height:262rpx;'>
+      </view>
+    </view>
+    <view class="open" catchtap="onTapOpen" wx:if="{{!open}}">展开了解更多</view>
+    
+  <view class="bottom">
+    <button class="button-send" open-type="share">转发到微信群</button>
+  </view>
+</view>

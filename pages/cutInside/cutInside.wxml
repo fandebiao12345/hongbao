@@ -1,0 +1,23 @@
+<import src="../../utils/weCropper.wxml" />
+
+<view class="cropper-wrapper">
+  <view wx:if="{{!display}}">
+    <template is="weCropper" data="{{...cropperOpt}}" />
+    <view class="cropper-buttons">
+      <view class="getCropperImage" bindtap="getCropperImage">
+        生成图片
+      </view>
+    </view>
+  </view>
+  <view class="previewImage" wx:if="{{display}}">
+    <image src="{{src}}"></image>
+    <view class="cropper-buttons">
+      <view class="getCropperImage" bindtap="cancel">
+        重新裁剪
+      </view>
+      <view class="upload" bindtap="submit">
+        确定
+      </view>
+    </view>
+  </view>
+</view>

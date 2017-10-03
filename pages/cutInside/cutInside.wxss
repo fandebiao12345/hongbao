@@ -1,0 +1,30 @@
+@import "../style/common.wxss";
+page{
+  width: 100%;
+  height: 100%;
+}
+
+.cropper{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.cropper-buttons{
+    background-color: rgba(0, 0, 0, 0.95);
+    color: #04b00f;
+}
+.previewImage{
+  position: absolute;
+  z-index: 999;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: black;
+  display: flex;
+}
+.previewImage image{
+  margin: auto
+}
